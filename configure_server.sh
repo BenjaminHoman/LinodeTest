@@ -52,8 +52,8 @@ else
 fi
 
 # Add HTTP service
-OUTPUT=$(firewall-cmd --zone=$DEFAULT_ZONE --add-service=http --permanent)
-echo "add http service output: $OUTPUT"
+# OUTPUT=$(firewall-cmd --zone=$DEFAULT_ZONE --add-service=http --permanent)
+# echo "add http service output: $OUTPUT"
 
 # Reload firewall after changes
 OUTPUT=$(firewall-cmd --reload)
